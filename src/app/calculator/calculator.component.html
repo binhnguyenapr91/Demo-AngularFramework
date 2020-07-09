@@ -1,0 +1,12 @@
+<h2>Calculator</h2>
+<label>Expression:</label>
+<input type="number" [(ngModel)]="firstOperator">
+<select [(ngModel)]="operand">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<input type="number" [(ngModel)]="secondOperator">
+<button (click)="onClickCalculate()">Calculate</button><br>
+<label>Result:{{result}}</label>
