@@ -1,0 +1,9 @@
+<hr>
+<h2>Color picker</h2>
+<select [value]="currentColor" (change)="changeCurrentColor($event.target.value)">
+  <option value="#962696">#962696</option>
+  <option value="#E3C866">#E3C866</option>
+  <option value="#E34FE3">#E34FE3</option>
+</select>
+<p>Color tracker:</p>
+<div class="color-preview" [style.background]="currentColor">{{currentColor}}</div>

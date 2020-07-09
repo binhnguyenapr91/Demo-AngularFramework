@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {FontSizeEditorComponent} from './font-size-editor/font-size-editor.component';
 import {PetComponent} from './pet/pet.component';
 import {CalculatorComponent} from './calculator/calculator.component';
+import {ColorPickerComponent} from './color-picker/color-picker.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path: 'calculator', component: CalculatorComponent
+  },
+  {
+    path: 'colorPicker', component: ColorPickerComponent
   }
 ];
 
