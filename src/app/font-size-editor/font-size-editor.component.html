@@ -1,0 +1,6 @@
+<h2>Font Size Editor</h2>
+<div>
+  <label>Choose font size value (px):</label>
+  <input type="range" min="10" max="20" value="18" [(ngModel)]="fontSize">
+</div>
+<p class="output" [style.fontSize.px]="fontSize" >Hello Angular</p>
