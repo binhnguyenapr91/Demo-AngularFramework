@@ -1,9 +1,14 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/">Home</a> |
-  <a routerLink="/font-size-editor">FontSizeChanger</a> |
-  <a routerLink="/petInfo">Pet Info</a> |
-  <a routerLink="/calculator">Calculator</a>
+<div class="container">
+  <h1>{{title}}</h1>
+  <hr>
+  <nav>
+    <a class="btn btn-outline-success" routerLink="/">Home</a> |
+    <a class="btn btn-outline-success" routerLink="/font-size-editor">Font Size Changer</a> |
+    <a class="btn btn-outline-success" routerLink="/petInfo">Pet Info</a> |
+    <a class="btn btn-outline-success" routerLink="/calculator">Calculator</a> |
+    <a class="btn btn-outline-success" routerLink="/colorPicker">Color Picker</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <hr>
+</div>
 
-</nav>
-<router-outlet></router-outlet>
