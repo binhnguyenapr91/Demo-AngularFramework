@@ -1,0 +1,11 @@
+<h2>Pet Info</h2>
+<label>Update pet name:</label><input type="text" [(ngModel)]="petName">
+<br>
+<label>Update pet image:</label><input type="url" [(ngModel)]="petImage">
+<br>
+<label>Update pet image size: </label>
+Width (px) <input type="range" min="200" max="500" value="300" [(ngModel)]="widthImage">
+Height (px)<input type="range" min="200" max="500" value="300" [(ngModel)]="heightImage">
+<h3>Pet name: {{petName}} </h3>
+<h3>Pet image: </h3>
+<img [src]="petImage" alt="petImage" [style.width.px]="widthImage" [style.height.px]="heightImage">
