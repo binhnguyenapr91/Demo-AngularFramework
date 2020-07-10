@@ -1,0 +1,21 @@
+<hr>
+<h2>Hacker <small>news</small></h2>
+<app-article-detail [article]="selectedArticle"></app-article-detail>
+<table class="table table-hover">
+  <thead>
+    <th>ID</th>
+    <th>TITLE</th>
+    <th>IMAGE</th>
+    <th>URL</th>
+    <th>FUNCS</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articles" (click)="onSelect(article)">
+      <td>{{article.id}}</td>
+      <td>{{article.title}}</td>
+      <td><img src="{{article.image}}" width="500px" height="250px" ></td>
+      <td>{{article.url}}</td>
+      <td><app-like></app-like></td>
+    </tr>
+  </tbody>
+</table>
