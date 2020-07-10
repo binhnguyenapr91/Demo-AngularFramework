@@ -12,6 +12,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { LikeComponent } from './like/like.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { NameCardComponent } from './name-card/name-card.component';
+import { ProcessBarComponent } from './process-bar/process-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NameCardComponent } from './name-card/name-card.component';
     ArticlesComponent,
     LikeComponent,
     ArticleDetailComponent,
-    NameCardComponent
+    NameCardComponent,
+    ProcessBarComponent
   ],
     imports: [
         BrowserModule,
