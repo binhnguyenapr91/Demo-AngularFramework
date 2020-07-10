@@ -1,0 +1,7 @@
+<div *ngIf="article">
+  <hr>
+  <p>ID: {{article.id}}</p>
+  <p>TITLE: <textarea type="text" [(ngModel)]="article.title"></textarea></p>
+  <p>IMAGE: <img src="{{article.image}}" alt="" width="500px" height="250px" ></p>
+  <p>URL: {{article.url}}</p>
+</div>
