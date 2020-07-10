@@ -11,6 +11,7 @@ import { ColorPickerComponent } from './color-picker/color-picker.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { LikeComponent } from './like/like.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { NameCardComponent } from './name-card/name-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
     ColorPickerComponent,
     ArticlesComponent,
     LikeComponent,
-    ArticleDetailComponent
+    ArticleDetailComponent,
+    NameCardComponent
   ],
     imports: [
         BrowserModule,

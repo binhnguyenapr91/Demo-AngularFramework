@@ -1,5 +1,6 @@
 <div class="container">
-  <h1>{{title}}</h1>
+  <h1 class="text-center">{{title}} </h1>
+  <app-name-card name='BinhNguyen' phone="0942796891" address="Hoang Mai, Ha Noi"></app-name-card>
   <hr>
   <nav>
     <a class="btn btn-outline-success" routerLink="/">Home</a> |
@@ -7,9 +8,11 @@
     <a class="btn btn-outline-success" routerLink="/petInfo">Pet Info</a> |
     <a class="btn btn-outline-success" routerLink="/calculator">Calculator</a> |
     <a class="btn btn-outline-success" routerLink="/colorPicker">Color Picker</a> |
-    <a class="btn btn-outline-success" routerLink="/articles">Hacker News</a>
+    <a class="btn btn-outline-success" routerLink="/articles">Hacker News</a> |
+    <a class="btn btn-outline-success" routerLink="/nameCard">Name Card</a>
   </nav>
   <router-outlet></router-outlet>
+
   <hr>
 </div>
 
