@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import { PetComponent } from './pet/pet.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ColorPickerComponent } from './color-picker/color-picker.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ColorPickerComponent } from './color-picker/color-picker.component';
     FontSizeEditorComponent,
     PetComponent,
     CalculatorComponent,
-    ColorPickerComponent
+    ColorPickerComponent,
+    ArticlesComponent
   ],
     imports: [
         BrowserModule,
