@@ -15,6 +15,8 @@ import { NameCardComponent } from './name-card/name-card.component';
 import { ProcessBarComponent } from './process-bar/process-bar.component';
 import { RatingBarComponent } from './rating-bar/rating-bar.component';
 import { RatingBarContainerComponent } from './rating-bar-container/rating-bar-container.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
+import { CoundownTimerContainerComponent } from './coundown-timer-container/coundown-timer-container.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RatingBarContainerComponent } from './rating-bar-container/rating-bar-c
     NameCardComponent,
     ProcessBarComponent,
     RatingBarComponent,
-    RatingBarContainerComponent
+    RatingBarContainerComponent,
+    CountdownTimerComponent,
+    CoundownTimerContainerComponent
   ],
     imports: [
         BrowserModule,
