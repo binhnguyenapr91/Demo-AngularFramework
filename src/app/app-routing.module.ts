@@ -6,6 +6,7 @@ import {CalculatorComponent} from './calculator/calculator.component';
 import {ColorPickerComponent} from './color-picker/color-picker.component';
 import {ArticlesComponent} from './articles/articles.component';
 import {RatingBarContainerComponent} from './rating-bar-container/rating-bar-container.component';
+import {CoundownTimerContainerComponent} from './coundown-timer-container/coundown-timer-container.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,9 @@ const routes: Routes = [
   },
   {
     path: 'rating-bar-container', component: RatingBarContainerComponent
+  },
+  {
+    path: 'countdown-timer-container', component: CoundownTimerContainerComponent
   }
 ];
 
