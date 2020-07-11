@@ -17,6 +17,7 @@ import { RatingBarComponent } from './rating-bar/rating-bar.component';
 import { RatingBarContainerComponent } from './rating-bar-container/rating-bar-container.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { CoundownTimerContainerComponent } from './coundown-timer-container/coundown-timer-container.component';
+import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdown-timer-get-set.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CoundownTimerContainerComponent } from './coundown-timer-container/coun
     RatingBarComponent,
     RatingBarContainerComponent,
     CountdownTimerComponent,
-    CoundownTimerContainerComponent
+    CoundownTimerContainerComponent,
+    CountdownTimerGetSetComponent
   ],
     imports: [
         BrowserModule,
