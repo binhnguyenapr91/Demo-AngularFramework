@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+interface IRatingUnit {
+  value: number;
+  active: boolean;
+}
 @Component({
   selector: 'app-process-bar',
   templateUrl: './process-bar.component.html',

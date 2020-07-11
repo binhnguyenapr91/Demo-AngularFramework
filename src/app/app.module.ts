@@ -13,6 +13,8 @@ import { LikeComponent } from './like/like.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { ProcessBarComponent } from './process-bar/process-bar.component';
+import { RatingBarComponent } from './rating-bar/rating-bar.component';
+import { RatingBarContainerComponent } from './rating-bar-container/rating-bar-container.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ProcessBarComponent } from './process-bar/process-bar.component';
     LikeComponent,
     ArticleDetailComponent,
     NameCardComponent,
-    ProcessBarComponent
+    ProcessBarComponent,
+    RatingBarComponent,
+    RatingBarContainerComponent
   ],
     imports: [
         BrowserModule,
