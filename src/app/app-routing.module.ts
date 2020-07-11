@@ -5,6 +5,7 @@ import {PetComponent} from './pet/pet.component';
 import {CalculatorComponent} from './calculator/calculator.component';
 import {ColorPickerComponent} from './color-picker/color-picker.component';
 import {ArticlesComponent} from './articles/articles.component';
+import {RatingBarContainerComponent} from './rating-bar-container/rating-bar-container.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,9 @@ const routes: Routes = [
   },
   {
     path: 'articles', component: ArticlesComponent
+  },
+  {
+    path: 'rating-bar-container', component: RatingBarContainerComponent
   }
 ];
 
