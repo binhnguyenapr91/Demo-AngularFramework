@@ -1,16 +1,25 @@
 import {Component, Input, OnInit, OnDestroy} from '@angular/core';
 
 @Component({
-  selector: 'app-countdown-timer',
-  templateUrl: './countdown-timer.component.html',
-  styleUrls: ['./countdown-timer.component.scss']
+  selector: 'app-countdown-timer-get-set',
+  templateUrl: './countdown-timer-get-set.component.html',
+  styleUrls: ['./countdown-timer-get-set.component.scss']
 })
-export class CountdownTimerComponent implements OnInit, OnDestroy {
+export class CountdownTimerGetSetComponent implements OnInit, OnDestroy {
+  private _seconds = 10;
   private intervalId = 0;
   message = '';
   remainingTime: number;
   @Input()
-  seconds = 10;
+  get seconds(): number{
+    return this._seconds;
+  }
+  set seconds(v){
+    v = typeof v === 'undefined' ? 10 : v;
+    const fixV = Number(v);
+    this._seconds = Number.isNaN(fixV) ? 10 : fixV;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
@@ -51,4 +60,5 @@ export class CountdownTimerComponent implements OnInit, OnDestroy {
     this.remainingTime = this.seconds;
     this.message = `Click start button to start the Countdown`;
   }
+
 }
