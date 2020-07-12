@@ -8,6 +8,7 @@
     <th>IMAGE</th>
     <th>URL</th>
     <th>FUNCS</th>
+    <th>Likes</th>
   </thead>
   <tbody>
     <tr *ngFor="let article of articles" (click)="onSelect(article)">
@@ -15,7 +16,7 @@
       <td>{{article.title}}</td>
       <td><img src="{{article.image}}" width="500px" height="250px" ></td>
       <td><a href="{{article.url}}">{{article.url}}</a></td>
-      <td><app-like></app-like></td>
+      <td>{{article.like}}</td>
     </tr>
   </tbody>
 </table>

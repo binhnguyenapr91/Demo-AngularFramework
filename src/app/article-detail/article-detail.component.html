@@ -4,4 +4,5 @@
   <p>TITLE: <textarea type="text" [(ngModel)]="article.title" cols="30" rows="5"></textarea></p>
   <p>IMAGE: <img src="{{article.image}}" alt="" width="500px" height="250px" ></p>
   <p>URL: <a href="{{article.url}}">{{article.url}}</a></p>
+  <p><app-like (likeClicked)="increaseLike()" [like]="article.like"></app-like></p>
 </div>
