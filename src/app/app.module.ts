@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontSizeEditorComponent } from './font-size-editor/font-size-editor.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PetComponent } from './pet/pet.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ColorPickerComponent } from './color-picker/color-picker.component';
@@ -18,6 +18,7 @@ import { RatingBarContainerComponent } from './rating-bar-container/rating-bar-c
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { CoundownTimerContainerComponent } from './coundown-timer-container/coundown-timer-container.component';
 import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdown-timer-get-set.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +36,14 @@ import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdo
     RatingBarContainerComponent,
     CountdownTimerComponent,
     CoundownTimerContainerComponent,
-    CountdownTimerGetSetComponent
+    CountdownTimerGetSetComponent,
+    TodoComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

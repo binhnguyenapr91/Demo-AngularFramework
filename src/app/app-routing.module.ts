@@ -7,10 +7,14 @@ import {ColorPickerComponent} from './color-picker/color-picker.component';
 import {ArticlesComponent} from './articles/articles.component';
 import {RatingBarContainerComponent} from './rating-bar-container/rating-bar-container.component';
 import {CoundownTimerContainerComponent} from './coundown-timer-container/coundown-timer-container.component';
+import {TodoComponent} from './todo/todo.component';
 
 const routes: Routes = [
   {
     path: 'font-size-editor', component: FontSizeEditorComponent
+  },
+  {
+    path: 'todo', component: TodoComponent
   },
   {
     path: '', redirectTo: '\font-size-editor', pathMatch: 'full'
