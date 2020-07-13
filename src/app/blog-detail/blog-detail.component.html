@@ -1,0 +1,14 @@
+<hr>
+<div *ngIf="post; else nothing">
+  <h4>Blog Detail</h4>
+  <h4>
+    {{post.title}}
+  </h4>
+  <p>
+    {{post.body}}
+  </p>
+</div>
+
+<ng-template #nothing>
+  <p>Nothing to show</p>
+</ng-template>

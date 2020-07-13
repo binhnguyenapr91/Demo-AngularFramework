@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontSizeEditorComponent } from './font-size-editor/font-size-editor.component';
@@ -21,6 +20,10 @@ import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdo
 import { TodoComponent } from './todo/todo.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogEditComponent } from './blog-edit/blog-edit.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,10 +44,14 @@ import { LoginComponent } from './login/login.component';
     CountdownTimerGetSetComponent,
     TodoComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    BlogComponent,
+    BlogEditComponent,
+    BlogDetailComponent
   ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule
