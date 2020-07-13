@@ -4,11 +4,11 @@
 <a class="btn btn-outline-info" routerLink="/blog/edit">Blog edit</a> |
 <hr>
 <ul>
-  <li *ngFor="let post of posts">
+  <li *ngFor="let post of posts; index as i">
     <h3>
       <a routerLink="/blog/detail">Post ID: {{post.id}} - {{post.title}}</a>
     </h3>
-    <a class="btn btn-outline-secondary" routerLink="/blog/edit">EDIT</a>
-    <button class="btn btn-outline-danger">DELETE</button>
+    <a class="btn btn-outline-secondary" routerLink="/blog/edit">EDIT</a> |
+    <button class="btn btn-outline-danger" (click)="deletePost(i)">DELETE</button>
   </li>
 </ul>

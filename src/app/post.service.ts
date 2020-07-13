@@ -16,4 +16,7 @@ export class PostService {
       map(response => response.filter((post, i) => i < count))
     );
   }
+  deletePost(id: number): Observable<any> {
+  return this.httpClient.delete(`${this.API_URL}/${id}`);
+  }
 }

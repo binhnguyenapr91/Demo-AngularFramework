@@ -15,5 +15,12 @@ export class BlogComponent implements OnInit {
     this.postService.getPost()
       .subscribe(next => (this.posts = next), error => (this.posts = []));
   }
-
+  deletePost(i): void{
+    if (confirm('Are you sure to delete?')){
+    const post = this.posts[i];
+    this.postService.deletePost(post.id).subscribe(() => {
+      this.posts = this.posts.filter(t => t.id !== post.id);
+    });
+    }
+  }
 }
