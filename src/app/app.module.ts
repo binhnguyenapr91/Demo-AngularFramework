@@ -19,6 +19,7 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
 import { CoundownTimerContainerComponent } from './coundown-timer-container/coundown-timer-container.component';
 import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdown-timer-get-set.component';
 import { TodoComponent } from './todo/todo.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TodoComponent } from './todo/todo.component';
     CountdownTimerComponent,
     CoundownTimerContainerComponent,
     CountdownTimerGetSetComponent,
-    TodoComponent
+    TodoComponent,
+    RegisterComponent
   ],
     imports: [
         BrowserModule,

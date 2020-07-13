@@ -8,8 +8,12 @@ import {ArticlesComponent} from './articles/articles.component';
 import {RatingBarContainerComponent} from './rating-bar-container/rating-bar-container.component';
 import {CoundownTimerContainerComponent} from './coundown-timer-container/coundown-timer-container.component';
 import {TodoComponent} from './todo/todo.component';
+import {RegisterComponent} from './register/register.component';
 
 const routes: Routes = [
+  {
+    path: 'register', component: RegisterComponent
+  },
   {
     path: 'font-size-editor', component: FontSizeEditorComponent
   },
