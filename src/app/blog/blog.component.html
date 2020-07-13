@@ -2,3 +2,13 @@
 <h2 class="text-center">Blog App</h2>
 <a class="btn btn-outline-info" routerLink="/blog/detail">Blog detail</a> |
 <a class="btn btn-outline-info" routerLink="/blog/edit">Blog edit</a> |
+<hr>
+<ul>
+  <li *ngFor="let post of posts">
+    <h3>
+      <a routerLink="/blog/detail">Post ID: {{post.id}} - {{post.title}}</a>
+    </h3>
+    <a class="btn btn-outline-secondary" routerLink="/blog/edit">EDIT</a>
+    <button class="btn btn-outline-danger">DELETE</button>
+  </li>
+</ul>
