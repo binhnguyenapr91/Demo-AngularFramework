@@ -19,4 +19,16 @@ export class PostService {
   deletePost(id: number): Observable<any> {
   return this.httpClient.delete(`${this.API_URL}/${id}`);
   }
+
+  getPostById(id: number): Observable<Post> {
+    return this.httpClient.get<Post>(`${this.API_URL}/${id}`);
+  }
+
+  createPost(post: Partial<Post>): Observable<Post> {
+    return this.httpClient.post<Post>(this.API_URL, post);
+  }
+
+  updatePost(post: Post): Observable<Post> {
+    return this.httpClient.patch<Post>(`${this.API_URL}/${post.id}`, post);
+  }
 }

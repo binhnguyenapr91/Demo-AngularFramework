@@ -19,10 +19,10 @@ const routes: Routes = [
     path: 'blog', component: BlogComponent,
   },
   {
-    path: 'blog/detail', component: BlogDetailComponent,
+    path: 'blog/:id', component: BlogDetailComponent,
   },
   {
-    path: 'blog/edit', component: BlogEditComponent,
+    path: 'blog/:id/edit', component: BlogEditComponent,
   },
   {
     path: 'login', component: LoginComponent
